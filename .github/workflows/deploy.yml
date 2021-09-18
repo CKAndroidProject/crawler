@@ -49,13 +49,13 @@ jobs:
         with:
           chromedriver-version: ${{ matrix.chrome_version }}
         
-      - name: Configuration environment
+      - name: run crawler
         run: |
           sudo timedatectl set-timezone "Asia/Shanghai"
           cd ./crawler/.code/
           python main.py
       
-      - name: Deploy github
+      - name: add github
         run: |
           git config --global user.email action@github.com
           git config --global user.name GitHub Action
