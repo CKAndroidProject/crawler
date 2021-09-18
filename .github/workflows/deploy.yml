@@ -9,7 +9,7 @@ on:
     - cron: '30 22 * * *'
     
 env:
-  DEPLOY_REPO: wonderkun/crawler
+  DEPLOY_REPO: ${{ github.workspace }}
   DEPLOY_BRANCH: master
 
 jobs:
