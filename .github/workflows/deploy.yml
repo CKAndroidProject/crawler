@@ -12,7 +12,7 @@ on:
 #     - cron: '30 22 * * *'
     
 env:
-  DEPLOY_REPO: ${{ github.workspace }}
+  DEPLOY_REPO: ${{owner}}/${{repo}}
   DEPLOY_BRANCH: master
 
 jobs:
